@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>gabe565/renovate-config",
+    ":automergeAll"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["Dockerfile", "^\\.github/workflows/"],
+      "matchStrings": [
+        "\\s*VUETORRENT_REPO: +(?<depName>.+)\\n\\s*VUETORRENT_REF: +(?<currentValue>.+)",
+        "ARG +VUETORRENT_REPO=(?<depName>.+)\\nARG +VUETORRENT_REF=(?<currentValue>.+)"
+      ],
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}

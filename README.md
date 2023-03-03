@@ -41,3 +41,7 @@ services:
       - 6881:6881/udp
     restart: unless-stopped
 ```
+
+### Kubernetes Helm Chart
+
+If you use my qBittorrent Helm chart, see [Custom configuration](https://github.com/gabe565/charts/tree/main/charts/qbittorrent#vuetorrent) in my chart docs.

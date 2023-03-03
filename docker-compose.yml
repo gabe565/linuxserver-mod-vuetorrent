@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  qbittorrent:
+    image: "ghcr.io/linuxserver/qbittorrent"
+    environment:
+      DOCKER_MODS: "ghcr.io/gabe565/linuxserver-mod-vuetorrent"
+    ports:
+      - "127.0.0.1:8080:8080"

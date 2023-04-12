@@ -25,7 +25,6 @@ jobs:
             type=semver,pattern={{major}}.{{minor}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
             type=semver,pattern={{major}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
             type=ref,event=branch
-            type=sha
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Buildx

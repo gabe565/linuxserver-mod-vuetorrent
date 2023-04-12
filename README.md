@@ -2,6 +2,8 @@
 
 Docker mod that installs [VueTorrent](https://github.com/WDaan/VueTorrent) to the [LinuxServer.io qBittorrent images](https://github.com/linuxserver/docker-qbittorrent).
 
+While an earlier Linux Server Vuetorrent mod can be found at [arafatamim/linuxserver-io-mod-vuetorrent](https://github.com/arafatamim/linuxserver-io-mod-vuetorrent), this mod uses a different approach. The previous mod relies on an installation script to download Vuetorrent, but my mod streamlines the process by packaging Vuetorrent directly into the container image. As a result, the Vuetorrent files are downloaded alongside the mod without requiring any separate installation scripts.
+
 # Installation
 
 1. Add the following environment variable to your qBittorrent deployment (see [examples](#examples))

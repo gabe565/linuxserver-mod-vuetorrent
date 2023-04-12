@@ -6,10 +6,11 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["Dockerfile", "^\\.github/workflows/"],
+      "fileMatch": ["Dockerfile", "^\\.github/workflows/", "README.md"],
       "matchStrings": [
         "\\s*VUETORRENT_REPO: +(?<depName>.+)\\n\\s*VUETORRENT_REF: +(?<currentValue>.+)",
-        "ARG +VUETORRENT_REPO=(?<depName>.+)\\nARG +VUETORRENT_REF=(?<currentValue>.+)"
+        "ARG +VUETORRENT_REPO=(?<depName>.+)\\nARG +VUETORRENT_REF=(?<currentValue>.+)",
+        "<!--renovate repo=(?<depName>.+) -->\\n.*\\/Version-(?<currentValue>.+?)-"
       ],
       "datasourceTemplate": "github-releases"
     }

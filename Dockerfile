@@ -11,7 +11,7 @@ RUN git clone -q \
     "https://github.com/$VUETORRENT_REPO.git" .
 
 
-FROM --platform=$BUILDPLATFORM node:18-alpine as builder
+FROM --platform=$BUILDPLATFORM node:20-alpine as builder
 WORKDIR /app
 
 COPY --from=src /app/package*.json .

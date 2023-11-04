@@ -2,7 +2,7 @@ FROM --platform=$BUILDPLATFORM alpine/git as src
 WORKDIR /app
 
 ARG VUETORRENT_REPO=WDaan/VueTorrent
-ARG VUETORRENT_REF=v1.8.0
+ARG VUETORRENT_REF=v2.0.0
 
 RUN git clone -q \
     --config=advice.detachedHead=false \

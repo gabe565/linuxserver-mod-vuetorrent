@@ -24,7 +24,6 @@ jobs:
             type=semver,pattern={{version}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
             type=semver,pattern={{major}}.{{minor}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
             type=semver,pattern={{major}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
-            type=ref,event=branch
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Buildx
@@ -40,7 +39,7 @@ jobs:
         with:
           context: .
           pull: true
-          push: ${{ github.secret_source == 'Actions' }}
+          push: ${{ github.secret_source == 'Actions' && steps.meta.outputs.tags != '' }}
           platforms: linux/amd64,linux/arm/v7,linux/arm64/v8
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

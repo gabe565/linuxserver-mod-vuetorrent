@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM alpine:3.18 as src
+FROM --platform=$BUILDPLATFORM alpine:3.19 as src
 WORKDIR /app
 
 ARG VUETORRENT_REPO=WDaan/VueTorrent

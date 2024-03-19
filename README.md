@@ -1,7 +1,7 @@
 # LinuxServer.io VueTorrent Mod
 
 <!--renovate repo=WDaan/VueTorrent -->
-[![Version](https://img.shields.io/badge/Version-v2.7.1-informational?style=flat)](https://github.com/gabe565/linuxserver-mod-vuetorrent/pkgs/container/linuxserver-mod-vuetorrent)
+[![Version](https://img.shields.io/badge/Version-v2.7.2-informational?style=flat)](https://github.com/gabe565/linuxserver-mod-vuetorrent/pkgs/container/linuxserver-mod-vuetorrent)
 [![Build](https://github.com/gabe565/linuxserver-mod-vuetorrent/actions/workflows/build.yml/badge.svg)](https://github.com/gabe565/linuxserver-mod-vuetorrent/actions/workflows/build.yml)
 
 Docker mod that installs [VueTorrent](https://github.com/WDaan/VueTorrent) to the [LinuxServer.io qBittorrent images](https://github.com/linuxserver/docker-qbittorrent).

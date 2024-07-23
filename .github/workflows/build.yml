@@ -24,6 +24,13 @@ jobs:
             type=semver,pattern={{version}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
             type=semver,pattern={{major}}.{{minor}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
             type=semver,pattern={{major}},value=${{ env.VUETORRENT_REF }},enable=${{ github.ref == 'refs/heads/main' }}
+          labels: |
+            org.opencontainers.image.title=LinuxServer.io VueTorrent Mod
+            maintainer=gabe565
+            org.opencontainers.image.vendor=gabe565
+            org.opencontainers.image.source=https://github.com/${{ env.VUETORRENT_REPO }}
+            org.opencontainers.image.version=${{ env.VUETORRENT_REF }}
+            org.opencontainers.image.licenses=GPL-3.0
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Buildx

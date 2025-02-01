@@ -1,7 +1,7 @@
 # LinuxServer.io VueTorrent Mod
 
 <!--renovate repo=WDaan/VueTorrent -->
-[![Version](https://img.shields.io/badge/Version-v2.21.0-informational?style=flat)](https://github.com/gabe565/linuxserver-mod-vuetorrent/pkgs/container/linuxserver-mod-vuetorrent)
+[![Version](https://img.shields.io/badge/Version-v2.22.0-informational?style=flat)](https://github.com/gabe565/linuxserver-mod-vuetorrent/pkgs/container/linuxserver-mod-vuetorrent)
 [![Build](https://github.com/gabe565/linuxserver-mod-vuetorrent/actions/workflows/build.yml/badge.svg)](https://github.com/gabe565/linuxserver-mod-vuetorrent/actions/workflows/build.yml)
 
 > [!IMPORTANT]

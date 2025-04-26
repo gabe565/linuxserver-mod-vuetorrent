@@ -4,7 +4,7 @@ on: push
 
 env:
   VUETORRENT_REPO: WDaan/VueTorrent
-  VUETORRENT_REF: v2.24.1
+  VUETORRENT_REF: v2.24.2
 
 jobs:
   build:

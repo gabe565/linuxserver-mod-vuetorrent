@@ -2,7 +2,7 @@ FROM --platform=$BUILDPLATFORM alpine:3.22 AS src
 WORKDIR /app
 
 ARG VUETORRENT_REPO=WDaan/VueTorrent
-ARG VUETORRENT_REF=v2.28.1
+ARG VUETORRENT_REF=v2.28.2
 
 RUN <<EOT
   set -eux
